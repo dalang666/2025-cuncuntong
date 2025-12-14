@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cuncuntong.mapper.AnnouncementCommentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cuncuntong.entity.po.AnnouncementComment">
+        <id column="id" property="id" />
+        <result column="ann_id" property="annId" />
+        <result column="comment_user_id" property="commentUserId" />
+        <result column="comment_nick" property="commentNick" />
+        <result column="comment_text" property="commentText" />
+        <result column="like_count" property="likeCount" />
+        <result column="reply_to" property="replyTo" />
+        <result column="comment_time" property="commentTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, ann_id, comment_user_id, comment_nick, comment_text, like_count, reply_to, comment_time, is_deleted
+    </sql>
+
+</mapper>

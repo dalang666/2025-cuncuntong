@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cuncuntong.mapper.EggRewardMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cuncuntong.entity.po.EggReward">
+        <id column="user_id" property="userId" />
+        <result column="current_eggs" property="currentEggs" />
+        <result column="total_eggs" property="totalEggs" />
+        <result column="last_exchange_time" property="lastExchangeTime" />
+        <result column="today_ad_count" property="todayAdCount" />
+        <result column="daily_ad_limit" property="dailyAdLimit" />
+        <result column="last_ad_time" property="lastAdTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, current_eggs, total_eggs, last_exchange_time, today_ad_count, daily_ad_limit, last_ad_time, create_time, update_time, is_deleted
+    </sql>
+
+</mapper>

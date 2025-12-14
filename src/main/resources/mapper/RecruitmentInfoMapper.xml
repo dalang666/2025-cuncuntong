@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cuncuntong.mapper.RecruitmentInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cuncuntong.entity.po.RecruitmentInfo">
+        <id column="id" property="id" />
+        <result column="job_name" property="jobName" />
+        <result column="salary_range" property="salaryRange" />
+        <result column="hire_count" property="hireCount" />
+        <result column="company_name" property="companyName" />
+        <result column="work_location" property="workLocation" />
+        <result column="publisher_id" property="publisherId" />
+        <result column="publish_time" property="publishTime" />
+        <result column="expire_time" property="expireTime" />
+        <result column="is_urgent" property="isUrgent" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, job_name, salary_range, hire_count, company_name, work_location, publisher_id, publish_time, expire_time, is_urgent, create_time, update_time, is_deleted
+    </sql>
+
+</mapper>

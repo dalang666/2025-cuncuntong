@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cuncuntong.mapper.NeighborMessageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.cuncuntong.entity.po.NeighborMessage">
+        <id column="id" property="id" />
+        <result column="receiver_id" property="receiverId" />
+        <result column="sender_id" property="senderId" />
+        <result column="msg_type" property="msgType" />
+        <result column="msg_content" property="msgContent" />
+        <result column="related_id" property="relatedId" />
+        <result column="is_read" property="isRead" />
+        <result column="send_time" property="sendTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_deleted" property="isDeleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, receiver_id, sender_id, msg_type, msg_content, related_id, is_read, send_time, create_time, update_time, is_deleted
+    </sql>
+
+</mapper>
